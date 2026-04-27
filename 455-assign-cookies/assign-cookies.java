@@ -3,15 +3,15 @@ class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        int i=0;
-        int j=0;
-        while(i<g.length && j<s.length){
-            if(s[j]>=g[i]){
-                i++;
+        int children =0;
+        int cookies =0;
+        while(children <g.length && cookies<s.length){
+            if(s[cookies]>=g[children]){
+                children++;
             }
-            j++;
+            cookies++;
         }
-        return i;
+        return children;
 
 
     }
